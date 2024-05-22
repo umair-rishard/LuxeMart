@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cosmetics</title>
+
+     <!--to link css-->
+     <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+     <!--link to google font-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+ 
+     <!--link to reset css-->
+     <link rel="stylesheet" href="./css/reset.css">
+ 
+     <!--link to font awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ 
+</head>
+<body class="cosmetic-body">
+
+     <!--header section-->
+     <header class="header">
+        
+        <!--logo container-->
+        <div class="logo-container">
+            <!--logo image-->
+            <img src="./image/logo.png" alt="logo" class="logo-image">
+            <!--logo text-->
+            <h1 class="logo-text">Luxe<span>Mart</span></h1>
+        </div>
+
+        <!--navigation bar-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./about.html">about us</a></li>
+                <!--dropdown bar-->
+                <li class="dropdown">
+                    <a href="#">products</a>
+                    <div class="dropdown-content">
+                        <a href="./vegetables.html">vegatables</a>
+                        <a href="#">cosmetics</a>
+                        <a href="./dairy-products.html">dairy-products</a>
+                    </div>
+
+                </li>
+                <li><a href="./order-page.html"order>order</a></li>
+                <li><a href="./loyalty-registration.html">loyalty registration</a></li>
+            </ul>
+        </nav>    
+        
+        <!--icons section-->
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-button"></div>
+            <div class="fa fa-search" id="search-button"></div>
+            <div class="fa fa-shopping-cart" id="cart-button"></div>
+            <div class="fa fa-user" id="user-button"></div>
+        </div>
+        
+        <!--search form-->
+        <form class="search-form">
+            <!--search input-->
+            <input type="search" id="search-box" placeholder="Search here....">
+            <!--search icon-->
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <!--shopping cart item 1-->
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fa fa-trash"> </i>
+                <img src="./image/strawberies.png">
+                <div class="content">
+                    <h3>Strawberry</h3>
+                    <span class="price">RS 350/-</span>
+                    <span class="quantity">Qnt : 1box</span>
+                </div>
+            </div>
+
+            <!--shopping cart item 2-->
+            <div class="box">
+                <i class="fa fa-trash"> </i>
+                <img src="./image/carrots.png">
+                <div class="content">
+                    <h3>Carrots</h3>
+                    <span class="price">RS 500/-</span>
+                    <span class="quantity">Qnt : 1kg</span>
+                </div>
+            </div>
+
+            <!--shopping cart item 3-->
+            <div class="box">
+                <i class="fa fa-trash"> </i>
+                <img src="./image/meat.png">
+                <div class="content">
+                    <h3>Meat</h3>
+                    <span class="price">RS 2000/-</span>
+                    <span class="quantity">Qnt : 1kg</span>
+                </div>
+            </div>
+
+            <div class="total">total : RS 2850/-</div>
+            <a href="#" class="Checkout-button">Checkout</a>
+
+        </div>
+
+        <!--login form-->
+        <form action="#" class="login-form">
+            <h3>Login</h3>
+            <br>
+            <input type="email" placeholder=" Enter your email" class="box">
+            <input type="password" placeholder="Your password" class="box">
+
+            <p class="password">Forgot your password.<a href="#" class="click-here">Click Here</a></p>
+            <p class="account">Don't have an account.<a href="#" class="create-now">Create Now</a></p>
+            <!--login button-->
+            <input type="submit" value="Login Now" class="login-button">
+        </form>
+       
+    </header>
+
+     <!--cosmetic-->
+    <main class="cosmetics">
+
+       <!--cosmetic section-->
+        <section class="cosmetic-product">
+            <h1>Cosmetics And Skin Care Products</h1>
+
+              <!--cosmetic section table-->
+            <section class="cosmetic-products-section">
+              <table class="cosmetic-products-table">
+                  <thead>
+                      <tr>
+                          <th>Product Image</th>
+                          <th>Product Name</th>
+                          <th>Description</th>
+                          <th>Order</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><img src="./image/cosmeticmen.png" alt="Black Silk Collection"></td>
+                          <td>Black Silk Collection</td>
+                          <td>Provides all-day hydration and protection, leaving skin silky smooth, visibly vibrant and shielded from environmental stressors.</td>
+                          <td><a href="./order-page.html" class="ordernowcosmetic-button">Order Now</a></td>
+                      </tr>
+                      <tr>
+                          <td><img src="./image/cosmeticmen4.2.png" alt="Mock-up Elixir"></td>
+                          <td>Mock-up Elixir</td>
+                          <td>This luxurious elixir hydrates deeply, enhances radiance, and rejuvenates skin for a youthful, glowing complexion.</td>
+                          <td><a href="./order-page.html" class="ordernowcosmetic-button">Order Now</a></td>
+                      </tr>
+                      <tr>
+                          <td><img src="./image/cosmeticmen3.4.png" alt="Radiant Glow Cream"></td>
+                          <td>Radiant Glow Cream</td>
+                          <td>Infused with vitamins, this elixir brightens and revitalizes your complexion, leaving skin luminous, smooth, and radiant.</td>
+                          <td><a href="./order-page.html" class="ordernowcosmetic-button">Order Now</a></td>
+                      </tr>
+                      <tr>
+                          <td><img src="./image/cosmetic5.2.png" alt="Velvet Touch Cream"></td>
+                          <td>Velvet Touch Cream</td>
+                          <td>This luxurious skincare cream nourishes deeply, leaving your skin feeling velvety smooth, hydrated, and beautifully radiant.</td>
+                          <td><a href="./order-page.html" class="ordernowcosmetic-button">Order Now</a></td>
+                      </tr>
+                      <tr>
+                          <td><img src="./image/cosmetic6.1.jpg" alt="Luminous Skin Serum"></td>
+                          <td>Luminous Skin Serum</td>
+                          <td>This advanced skincare cream enhances evens skin tone, and boosts hydration for a luminous, glowing complexion.</td>
+                          <td><a href="./order-page.html" class="ordernowcosmetic-button">Order Now</a></td>
+                      </tr>
+                  </tbody>
+              </table>
+      </section>
+
+        </section>
+
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+          <div class="wrapper">
+            <div class="footer-widget">
+
+             <!--footer image for logo-->
+                <img src="image/logo.png" class="logo-footer"/>
+                <h3>luxe<span>Mart</span></h3>
+
+               <!--footer adress-->
+              <p class="address">
+                No:148, Vauxhall Street, Colombo 2, Sri Lanka.
+              </p>
+
+               <!--footer number-->
+              <p class="number">
+                <i class="fa-solid fa-phone-flip"></i>
+                +94 11 2303500
+                <br>
+                <span>(Daily operating hours 8.00a.m to 8.00p.m)</span>
+              </p>
+
+                <!--social icons-->
+              <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+
+              <!--footer contents-->
+              <div class="footer-widget">
+                <h6>Quick Link</h6>
+                <ul class="links">
+                  <li><a href="#">home</a></li>
+                  <li><a href="./about.html">about</a></li>
+                  <li><a href="#">service</a></li>
+                  <li><a href="./order-page.html">order</a></li>
+                  <li><a href="./loyalty-registration.html">loyalty-registration</a></li>
+                </ul>
+              </div>
+            
+              <!--footer contents-->
+            <div class="footer-widget">
+              <h6>categories</h6>
+              <ul class="links">
+                <li><a href="#">groceries</a></li>
+                <li><a href="#">vegatables</a></li>
+                <li><a href="#">beverages</a></li>
+                <li><a href="#">household</a></li>
+                <li><a href="#">dairy products</a></li>
+              </ul>
+            </div>
+            
+              <!--footer contents-->
+            <div class="footer-widget">
+              <h6>Help &amp; Support</h6>
+              <ul class="links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">support center</a></li>
+                <li><a href="#">live chat</a></li>
+                <li><a href="#">delivery grids</a></li>
+                <li><a href="#">terms &amp; conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <p class="copyright"> &copy; created by Luxe<span>Mart</span> || All right reserved</p>
+          </div>
+        </div>
+      </footer>
+
+     <!--link to java file-->
+     <script src="js/script.js"></script>
+    
+</body>
+</html>
