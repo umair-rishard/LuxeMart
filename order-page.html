@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order-page</title>
+
+      <!--to link css-->
+      <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+      <!--link to google font-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+      <!--link to reset css-->
+      <link rel="stylesheet" href="./css/reset.css">
+  
+      <!--link to font awesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+     <!--header section-->
+     <header class="header">
+        
+        <!--logo container-->
+        <div class="logo-container">
+            <!--logo image-->
+            <img src="./image/logo.png" alt="logo" class="logo-image">
+            <!--logo text-->
+            <h1 class="logo-text">Luxe<span>Mart</span></h1>
+        </div>
+
+        <!--navigation bar-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./about.html">about us</a></li>
+                <li><a href="./products.html">products</a></li>
+                <li><a href="#">order</a></li>
+                <li><a href="./loyalty-registration.html">loyalty registration</a></li>
+            </ul>
+        </nav>    
+        
+        <!--icons section-->
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-button"></div>
+            <div class="fa fa-search" id="search-button"></div>
+            <div class="fa fa-shopping-cart" id="cart-button"></div>
+            <div class="fa fa-user" id="user-button"></div>
+        </div>
+        
+    </header>
+
+    <main class="order-page">
+      <section>
+          <div class="order-form">
+              <h1>Customer Information</h1>
+              
+              <form id="order-form">
+                  <div class="form-group">
+                      <input type="text" name="fullname" placeholder="Full Name" required>
+                      <input type="email" name="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="phone" placeholder="Phone Number" required>
+                      <input type="text" name="address" placeholder="Street Address" required>
+                  </div>
+                 
+                  
+                  <!-- Payment Method -->
+                  <div class="product-select">
+                      <label for="payment-method">Choose a payment method:</label>
+                      <select id="payment-method" name="payment-method" required>
+                          <option value="" disabled selected>Select payment method</option>
+                          <option value="cash">Cash</option>
+                          <option value="credit-card">Credit Card</option>
+                          <option value="bank-transfer">Bank Transfer</option>
+                          <option value="paypal">PayPal</option>
+                      </select>
+                  </div>
+                 
+                  <!-- Order Page Form Button -->
+                  <button type="submit" class="orderbtn">Pay</button>
+                  <p>By confirming your order, you accept our <a href="#">Terms</a>, <a href="#">Privacy Policy</a>, and <a href="#">Cookies Policy</a>. You may receive SMS updates from us, with the option to unsubscribe at any moment.</p>
+              </form>
+          </div>
+      </section>
+       
+      
+      <!-- order summary table -->
+      <section class="order-summary">
+        <h2>Order Summary</h2>
+        <table id="order-table">
+            <thead>
+                <tr>
+                    <th>Products</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <p id="order-total-price">Total Price: 0.00 RS</p>
+        <div class="button-container">
+            <button id="add-to-favourites-order" class="button favourites-btn">Add to Favourites</button>
+            <button id="apply-favourites-order" class="button favourites-btn">Apply Favourites</button>
+        </div>
+      </section>
+   
+      
+     
+
+     
+
+  </main>
+
+  
+  
+     <!--footer-->
+     <footer>
+        <div class="container">
+          <div class="wrapper">
+            <div class="footer-widget">
+
+             <!--footer image for logo-->
+                <img src="image/logo.png" class="logo-footer"/>
+                <h3>luxe<span>Mart</span></h3>
+
+               <!--footer adress-->
+              <p class="address">
+                No:148, Vauxhall Street, Colombo 2, Sri Lanka.
+              </p>
+
+               <!--footer number-->
+              <p class="number">
+                <i class="fa-solid fa-phone-flip"></i>
+                +94 11 2303500
+                <br>
+                <span>(Daily operating hours 8.00a.m to 8.00p.m)</span>
+              </p>
+
+                <!--social icons-->
+              <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+
+              <!--footer contents-->
+              <div class="footer-widget">
+                <h6>Quick Link</h6>
+                <ul class="links">
+                  <li><a href="./index.html">home</a></li>
+                  <li><a href="./about.html">about</a></li>
+                  <li><a href="./products.html">products</a></li>
+                  <li><a href="./order-page.html">order</a></li>
+                  <li><a href="./loyalty-registration.html">loyalty-registration</a></li>
+                </ul>
+              </div>
+            
+              <!--footer contents-->
+            <div class="footer-widget">
+              <h6>categories</h6>
+              <ul class="links">
+                <li><a href="#">groceries</a></li>
+                <li><a href="#">vegatables</a></li>
+                <li><a href="#">beverages</a></li>
+                <li><a href="#">household</a></li>
+                <li><a href="#">dairy products</a></li>
+              </ul>
+            </div>
+            
+              <!--footer contents-->
+            <div class="footer-widget">
+              <h6>Help &amp; Support</h6>
+              <ul class="links">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">support center</a></li>
+                <li><a href="#">live chat</a></li>
+                <li><a href="#">delivery grids</a></li>
+                <li><a href="#">terms &amp; conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="copyright"> &copy; created by Luxe<span>Mart</span> || All right reserved</p>
+        </div>
+      </footer>
+
+     <!--link to java file-->
+     <script src="js/main.js"></script>
+
+
+    
+</body>
+</html>
